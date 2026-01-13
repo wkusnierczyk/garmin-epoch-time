@@ -22,8 +22,8 @@ class App extends Application.AppBase {
         WatchUi.requestUpdate();
     }
 
-    function getSettingsView() {
-        return [ new Menu(), new Delegate() ];
-    }
+    // function getSettingsView() {
+    //     return [ new Menu(), new Delegate() ];
+    // }
 
 }

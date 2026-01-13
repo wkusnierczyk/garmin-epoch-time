@@ -1,8 +1,8 @@
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://developer.garmin.com/downloads/connect-iq/resources.xsd">
 
-    <string id="AppName">{blank:ucname}Time</string>
-    <string id="Customize">{blank:ucname} Time</string>
+    <string id="AppName">EpochTime</string>
+    <string id="Customize">Epoch Time</string>
 
     <!-- <string id="StandardTimeMenuTitle">Show Standard Time</string>
 
