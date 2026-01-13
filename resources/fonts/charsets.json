@@ -1,6 +1,10 @@
 [
     {
         "fontCharset": "0123456789",
-        "fontId": "Digits"
+        "fontId": "Epoch"
+    },
+    {
+        "fontCharset": "[]/~$,.:0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghilmnoprstuvyz ",
+        "fontId": "Command"
     }
 ]
