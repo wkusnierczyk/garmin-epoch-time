@@ -1,44 +1,49 @@
-# Garmin {blank:ucname} Time
+# Garmin Epoch Time
 
-A minimalist, elegant, nerdy, typography-focused Garmin Connect IQ watch face that displays the current time {blank:short-description}.
+A minimalist, elegant, nerdy, typography-focused Garmin Connect IQ watch face that displays the Unix time (seconds elpased since 00:00:00 UTC on 1 January 1970, _the Unix epoch_).
 
-![{blank:ucname} Time](resources/graphics/{blank:ucname}TimeHero-small.png)
+![Epoch Time](resources/graphics/epochTimeHero-small.png)
 
 Available from [Garmin Connect IQ Developer portal](https://apps.garmin.com/apps/{blank:app-id}) or through the Connect IQ mobile app.
 
 > **Note**  
-> {blank:ucname} Time is part of a [collection of unconventional Garmin watch faces](https://github.com/wkusnierczyk/garmin-watch-faces). It has been developed for fun, as a proof of concept, and as a learning experience.
+> Epoch Time is part of a [collection of unconventional Garmin watch faces](https://github.com/wkusnierczyk/garmin-watch-faces). It has been developed for fun, as a proof of concept, and as a learning experience.
 > It is shared _as is_ as an open source project, with no commitment to long term maintenance and further feature development.
 >
-> Please use [issues](https://github.com/wkusnierczyk/garmin-{blank:lcname}-time/issues) to provide bug reports or feature requests.  
-> Please use [discussions](https://github.com/wkusnierczyk/garmin-{blank:lcname}-time/discussions) for any other comments.
+> Please use [issues](https://github.com/wkusnierczyk/garmin-epoch-time/issues) to provide bug reports or feature requests.  
+> Please use [discussions](https://github.com/wkusnierczyk/garmin-epoch-time/discussions) for any other comments.
 >
 > All feedback is wholeheartedly welcome.
 
 ## Contents
 
-* [{blank:ucname} time](#{blank:lcname}-time)
+* [Epoch time](#epoch-time)
 * [Features](#features)
 * [Fonts](#fonts)
 * [Build, test, deploy](#build-test-deploy)
 
-## {blank:ucname} time
+## Epoch time
 
-{blank:description}
+_"Unix time is a date and time representation widely used in computing. It measures time by the number of non-leap seconds that have elapsed since 00:00:00 UTC on 1 January 1970, the Unix epoch. For example, at midnight on 1 January 2010, Unix time was 1262304000._
+
+_Unix time originated as the system time of Unix operating systems. It has come to be widely used in other computer operating systems, file systems, programming languages, and databases. In modern computing, values are sometimes stored with higher granularity, such as microseconds or nanoseconds."_
+
+-- [Wikipedia](https://en.wikipedia.org/wiki/Unix_time)
 
 ## Features
 
-The {blank:ucname} Time watch face supports the following features:
+The Epoch Time watch face supports the following features:
 
 |Screenshot|Description|
 |-|:-|
-{blank:features}
+|![](resources/graphics/EpochTime.png)|**Unix Time**<br/> Seconds since Epoch displayed in the center of the screen.|
+||**Current date and time**<br/> Current date and local time displayed under the Unix time.|
 
 ## Fonts
 
-The {blank:ucname} Time watch face uses custom fonts:
+The Epoch Time watch face uses custom fonts:
 
-{blank:fonts}
+* [SUSEMono Regular](https://fonts.google.com/specimen/SUSE+Mono?query=suse+mono) for both Unix time and current date and time.
 
 > The development of Garmin watch faces motivated the implementation of two useful tools:
 > * A TTF to FNT+PNG converter ([`ttf2bmp`](https://github.com/wkusnierczyk/ttf2bmp)).  
@@ -56,7 +61,34 @@ The font development proceeded as follows:
 
 The table below lists all font sizes provided for the supported screen resolutions.
 
-{blank:font-table}
+| Resolution |    Shape     | Element |       Font       | Size |
+| ---------: | :----------- | :------ | :--------------- | ---: |
+|  148 x 205 | rectangle    | Command | SUSEMono light   |    6 |
+|  148 x 205 | rectangle    | Epoch   | SUSEMono regular |   20 |
+|  176 x 176 | semi-octagon | Command | SUSEMono light   |    7 |
+|  176 x 176 | semi-octagon | Epoch   | SUSEMono regular |   23 |
+|  215 x 180 | semi-round   | Command | SUSEMono light   |    8 |
+|  215 x 180 | semi-round   | Epoch   | SUSEMono regular |   24 |
+|  218 x 218 | round        | Command | SUSEMono light   |    9 |
+|  218 x 218 | round        | Epoch   | SUSEMono regular |   29 |
+|  240 x 240 | round        | Command | SUSEMono light   |   10 |
+|  240 x 240 | rectangle    | Command | SUSEMono light   |   10 |
+|  240 x 240 | round        | Epoch   | SUSEMono regular |   32 |
+|  240 x 240 | rectangle    | Epoch   | SUSEMono regular |   32 |
+|  260 x 260 | round        | Command | SUSEMono light   |   11 |
+|  260 x 260 | round        | Epoch   | SUSEMono regular |   34 |
+|  280 x 280 | round        | Command | SUSEMono light   |   12 |
+|  280 x 280 | round        | Epoch   | SUSEMono regular |   37 |
+|  320 x 360 | rectangle    | Command | SUSEMono light   |   13 |
+|  320 x 360 | rectangle    | Epoch   | SUSEMono regular |   42 |
+|  360 x 360 | round        | Command | SUSEMono light   |   15 |
+|  360 x 360 | round        | Epoch   | SUSEMono regular |   48 |
+|  390 x 390 | round        | Command | SUSEMono light   |   16 |
+|  390 x 390 | round        | Epoch   | SUSEMono regular |   52 |
+|  416 x 416 | round        | Command | SUSEMono light   |   17 |
+|  416 x 416 | round        | Epoch   | SUSEMono regular |   55 |
+|  454 x 454 | round        | Command | SUSEMono light   |   19 |
+|  454 x 454 | round        | Epoch   | SUSEMono regular |   60 |
 
 ## Build, test, deploy
 

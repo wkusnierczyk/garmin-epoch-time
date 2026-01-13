@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <fonts>
+        <font id="Epoch" filename="SUSEMono-Regular-55.fnt" antialias="true" />
+        <font id="Command" filename="SUSEMono-Light-17.fnt" antialias="true" />
+    </fonts>
+</resources>
