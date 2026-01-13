@@ -36,8 +36,12 @@ The Epoch Time watch face supports the following features:
 
 |Screenshot|Description|
 |-|:-|
-|![](resources/graphics/EpochTime.png)|**Unix Time**<br/> Seconds since Epoch displayed in the center of the screen.|
-||**Current date and time**<br/> Current date and local time displayed under the Unix time.|
+|![](resources/graphics/EpochTime1.png)|**Unix Time**<br/> Seconds since Epoch displayed in the center of the screen.|
+|![](resources/graphics/EpochTime2.png)|**Current date and time**<br/> Current date and local time displayed under the Unix time.|
+
+> **Note**  
+> Every minute the watch face displays a **fake** error message for 15 seconds. 
+> Don't get spooked :)
 
 ## Fonts
 

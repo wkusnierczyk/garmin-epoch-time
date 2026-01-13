@@ -137,13 +137,15 @@ class Epoch {
         y += _dateHeight;
         _dc.drawText(x, y, DATE_FONT, text, justify);
 
-        y += (1.5 * _dateHeight).toNumber();
-        _dc.setColor(ERROR_COLOR, Graphics.COLOR_BLACK);
-        _dc.drawText(x, y, DATE_FONT, "[E47] Corrupt file system", justify);
-        y += _dateHeight;
-        var reboot = Lang.format("Rebooting in $1$ seconds...", [(9 - info.sec % 9).format("%2d")]);
-        _dc.drawText(x, y, DATE_FONT, reboot, justify);
-
+        var errorCutoff = 15;
+        if (info.sec < errorCutoff) {
+            y += (1.5 * _dateHeight).toNumber();
+            _dc.setColor(ERROR_COLOR, Graphics.COLOR_BLACK);
+            _dc.drawText(x, y, DATE_FONT, "[E47] Corrupt file system", justify);
+            y += _dateHeight;
+            var reboot = Lang.format("Rebooting in $1$ seconds...", [(errorCutoff - info.sec).format("%02d")]);
+            _dc.drawText(x, y, DATE_FONT, reboot, justify);
+        }
     }
     
 
