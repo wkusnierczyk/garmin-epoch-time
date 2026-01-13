@@ -2,7 +2,7 @@
 
 A minimalist, elegant, nerdy, typography-focused Garmin Connect IQ watch face that displays the Unix time (seconds elpased since 00:00:00 UTC on 1 January 1970, _the Unix epoch_).
 
-![Epoch Time](resources/graphics/epochTimeHero-small.png)
+![Epoch Time](resources/graphics/EpochTimeHero-small.png)
 
 Available from [Garmin Connect IQ Developer portal](https://apps.garmin.com/apps/{blank:app-id}) or through the Connect IQ mobile app.
 
