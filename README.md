@@ -4,7 +4,7 @@ A minimalist, elegant, nerdy, typography-focused Garmin Connect IQ watch face th
 
 ![Epoch Time](resources/graphics/EpochTimeHero-small.png)
 
-Available from [Garmin Connect IQ Developer portal](https://apps.garmin.com/apps/{blank:app-id}) or through the Connect IQ mobile app.
+Available from [Garmin Connect IQ Developer portal](https://apps.garmin.com/apps/5bc615a1-2636-477f-87bf-4e929445a689) or through the Connect IQ mobile app.
 
 > **Note**  
 > Epoch Time is part of a [collection of unconventional Garmin watch faces](https://github.com/wkusnierczyk/garmin-watch-faces). It has been developed for fun, as a proof of concept, and as a learning experience.
